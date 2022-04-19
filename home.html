@@ -1,0 +1,179 @@
+<!DOCKTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Miscellany</title>
+<style>
+body{
+	background-color:#000000;
+	font-family: Calibri, sans-serif;
+	color:#ffffff;
+	padding:0;
+	margin:0;
+}
+
+.menu_bar{
+	height:150px;
+	display:block;
+	overflow:hidden;	
+}
+
+.menu_bar ul{
+	display:inline-flex;
+	list-style:none;
+	float:right;
+}
+
+.menu_bar ul li{
+	margin:15px;
+	padding:15px;
+}
+
+.menu_bar ul li a{
+	text-decoration:none;
+	font-size:25px;
+	color:#ffffff;
+}
+
+.logo{
+	float:left;
+}
+
+#name{
+	position:absolute;
+	left:580px;
+	top:200px;
+	font-size:100px;
+	font-family:calibry;
+	font-weight:bold;
+	color:#ffcc00;
+}	
+
+#caption{
+	position:absolute;
+	top:450px;
+	right:100px;
+	font-size:20px;
+	font-family:cursive;
+	font-weight:bold;
+	animation-name:change;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;	
+}
+@keyframes change{
+        	from{color: #cc33ff;}
+        	to{color: #00ff00;}
+}
+
+p{
+	margin:2%;
+	padding:1%;
+	text-align:justify;
+}
+
+h1{
+	text-align:center;
+	font-weight:bold;
+	color:#ffcc00;
+}
+
+table{
+	margin:2%;
+	padding:1%;
+}
+
+table td{
+	padding-right:20px;
+}
+
+button{
+	margin-left:45px;
+}
+
+footer{
+	padding-top:10px;
+	height:100px;
+	hidden:overflow;
+	text-align:center;
+}
+
+footer p{
+	padding-top:0px;
+	font-family:monaco,courier new;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	
+}
+
+</style>
+</head>
+<body>
+<header>
+	<div class="menu_bar">
+	<div class="logo">
+		<a href="home.html"><img src="images/logo.png" alt="logo" width="180px" height="150px"></a>
+	</div>
+	<ul>
+		<li><a href="home.html" class="active">Home</a></li>
+		<li><a href="audio.html">Audio</a></li>
+		<li><a href="video.html">Video</a></li
+	</ul>
+	</div>
+</header>	
+		<img src="images/b4.jpg" alt="photo" width="100%" height="600px">
+	<div id="name">Miscellany</div>
+	<div id="caption">Download your favorites from here</div>
+<hr>
+<h1>A great website for downloading audios & videos!</h1>
+<p>Downloading audio and video files from third-party apps can be a pain. For one, you need to have a good Internet connection for easy and fast download. But there is more to download than speedy and large mobile data. Some apps come with complicating download process that will leave you mind-boggled, while some needs you to install other apps for file conversion. A huge waste of time when all you wanted is to download a clip or a song for offline streaming. If you want to download videos and audios without all the trouble, then Miscellany is your answer.It is a free tool for downloading music and videos from various streaming websites, including YouTube. With this program, you can convert a wide range of media files to desired file types. Miscellany comes with a basic search engine, allowing you to find videos across numerous websites, from Facebook, YouTube, and Instagram to lesser-known services. Additionally, if you’re familiar with specific videos you want to download, it’s possible to enter the video’s URL to initiate the process.</p><br><br>
+<hr>
+<h1>Top Music Videos</h1>
+<table>
+<tr>
+<td>
+<iframe width="450" height="350" src="https://www.youtube.com/embed/saalGKY7ifU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td>
+<iframe width="450" height="350" src="https://www.youtube.com/embed/XAi3VTSdTxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+<td>
+<iframe width="450" height="350" src="https://www.youtube.com/embed/Ntn1-SocNiY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+</tr>
+</table>
+<hr>
+<p>Click the following command to view your geographical coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<hr>
+<footer>
+		<a href="https://www.linkedin.com/in/melani-s-4bb4421b2" target="_blank"><img src="images/linkedin.png" alt="linkedin_logo" width="50px" height="50px"></a> 
+		<a href="https://twitter.com/MelaniSandalika?s=09" target="_blank"><img src="images/twitter.png" alt="twitter_logo" width="50px" height="50px"></a> 
+		<a href="https://www.facebook.com/melani.sandalika" target="_blank"><img src="images/facebook.png" alt="facebook_logo" width="50px" height="50px"></a>  
+		<a href="https://instagram.com/melani_sandalika?igshid=17n77dfe3nf1g" target="_blank"><img src="images/instagram.png" alt="instagram_logo" width="50px" height="50px"></a>
+<p>© All rights reserved</p>
+	
+</footer>
+	
+</body>
+</html>
